@@ -1,0 +1,26 @@
+{
+  "name": "fashion-timeline",
+  "version": "0.0.1",
+  "description": "Isomorphic React and Redux web app for the NET-A-PORTER hackday",
+  "main": "build/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesseanwright/fashion-timeline.git"
+  },
+  "keywords": [
+    "net-a-porter",
+    "fashion",
+    "timeline",
+    "websockets",
+    "live"
+  ],
+  "author": "James Wright <james@jamesswright.co.uk>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jamesseanwright/fashion-timeline/issues"
+  },
+  "homepage": "https://github.com/jamesseanwright/fashion-timeline#readme"
+}
