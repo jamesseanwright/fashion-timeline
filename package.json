@@ -4,6 +4,8 @@
   "description": "Isomorphic React and Redux web app for the NET-A-PORTER hackday",
   "main": "build/server.js",
   "scripts": {
+    "build": "./tasks/build.sh",
+    "dev": "npm run build && node build/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +20,16 @@
     "live"
   ],
   "author": "James Wright <james@jamesswright.co.uk>",
-  "license": "BSD-2-Clause",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/jamesseanwright/fashion-timeline/issues"
   },
-  "homepage": "https://github.com/jamesseanwright/fashion-timeline#readme"
+  "homepage": "https://github.com/jamesseanwright/fashion-timeline#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "react": "^0.14.0",
+    "redux": "^3.0.2",
+    "simple-iso": "^0.1.1"
+  }
 }
