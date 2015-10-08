@@ -3,7 +3,7 @@ import express from 'express'
 import exphbs from 'express-handlebars';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
-import PostActions from './actions/PostActions';
+import postActions from './actions/postActions';
 import PostList from './components/PostList';
 import flux from './boilerplate/flux';
 

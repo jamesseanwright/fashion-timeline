@@ -1,19 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FluxMixin, StoreWatchMixin } from 'fluxxor';
+import Post from './Post';
 
 const PostList = React.createClass({
-	mixins: [FluxMixin(React), StoreWatchMixin('PostStore')],
+	mixins: [StoreWatchMixin('PostStore')],
 
 	getInitialState() {
+		const { flux } = this.props;
+		flux.actions.listen();
 		return null;
 	},
 
 	getStateFromFlux() {
-
+		const { flux } = this.props;
+		return flux.store('PostStore').getState();
 	},
 
 	render() {
-		return <p>Lol</p>
+		const { posts } = this.state;
+
+		const children = posts.map(post => <Post key={post.id} {...post} />);
+
+		return (
+			<ul>
+				{children}
+			</ul>
+		);
 	}
 });
 

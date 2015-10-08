@@ -1,10 +1,10 @@
 import postService from '../services/postService';
 import constants from '../actions/constants';
 
-class PostActions {
+const postActions = {
 	listen() {
 		postService.listen(post => this.dispatch(constants.onPostReceived, post));
 	}
 }
 
-export default PostActions;
+export default postActions;

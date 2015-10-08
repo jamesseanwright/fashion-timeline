@@ -3,9 +3,11 @@
 		{
 			"id": 1,
 			"time": "13:50",
+			"title": "Post One",
 			"media": {
 				"type": "image",
-				"url": "http://image"
+				"url": "http://image",
+				"alt": "Alt text"
 			},
 			"text": "A caption"
 		},
@@ -13,6 +15,7 @@
 		{
 			"id": 2,
 			"time": "13:51",
+			"title": "Post Two",
 			"media": {
 				"type": "video",
 				"url": "http://video"
