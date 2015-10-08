@@ -28,8 +28,9 @@
   "dependencies": {
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
+    "firebase": "^2.3.1",
+    "fluxxor": "^1.7.3",
     "react": "^0.14.0",
-    "redux": "^3.0.2",
     "simple-iso": "^0.1.1"
   }
 }

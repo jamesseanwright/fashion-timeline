@@ -1,0 +1,23 @@
+{
+	"posts": [
+		{
+			"id": 1,
+			"time": "13:50",
+			"media": {
+				"type": "image",
+				"url": "http://image"
+			},
+			"text": "A caption"
+		},
+
+		{
+			"id": 2,
+			"time": "13:51",
+			"media": {
+				"type": "video",
+				"url": "http://video"
+			},
+			"text": "A video"
+		}
+	]
+}

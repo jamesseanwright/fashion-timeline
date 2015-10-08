@@ -1,6 +1,7 @@
 import iso from 'simple-iso';
 import express from 'express'
 import exphbs from 'express-handlebars';
+import PostActions from './actions/PostActions';
 
 const app = express();
 const port = process.env.PORT || 3000;
