@@ -9,7 +9,6 @@ const Post = React.createClass({
 			<li>
 				<h3>{title}</h3>
 				<time>{time}</time>
-				<Media {...media} />
 				<p>{text}</p>
 			</li>
 		);

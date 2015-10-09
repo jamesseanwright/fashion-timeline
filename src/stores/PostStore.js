@@ -9,9 +9,11 @@ const PostStore = Fluxxor.createStore({
 
 	onPostReceived: function onPostReceived(post) {
 		if (Array.isArray(post))
-			this._posts = post;
+			this._posts = post.reverse();
 		else
-			this._posts.push(post);
+			this._posts.unshift(post);
+
+		console.log(this._posts);
 		
 		this.emit('change');
 	},

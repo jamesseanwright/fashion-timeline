@@ -1,5 +1,5 @@
 import Firebase from 'firebase';
-const firebase = new Firebase('https://fashion-timeline.firebaseio.com/posts');
+const firebase = new Firebase('https://fashion-timeline.firebaseio.com/');
 
 const postService = {
 	listen(callback) {
@@ -10,7 +10,7 @@ const postService = {
 
 	push(id, post) {
 		post.id = id + 1;
-		firebase.child(`posts/${id}`).set(post);
+		firebase.child(`${id}`).set(post);
 	}
 };
 
