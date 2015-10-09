@@ -8,3 +8,5 @@ browserify build/public/__main.js > build/public/main.js
 rm build/public/__main.js
 echo "Copying view template..."
 cp src/view.handlebars build
+echo "Copying CSS..."
+cp src/public/main.css build/public/main.css

@@ -8,6 +8,7 @@ const Post = React.createClass({
 		return (
 			<li>
 				<h3>{title}</h3>
+				<Media {...media} />
 				<time>{time}</time>
 				<p>{text}</p>
 			</li>

@@ -1,24 +1,24 @@
 [
 	{
 		"id": 1,
-		"time": "13:50",
-		"title": "Post One",
+		"time": "13:00",
+		"title": "Catwalk",
 		"media": {
-			"type": "image",
-			"url": "http://image",
-			"alt": "Alt text"
+			"type": "video",
+			"url": "http://res.cloudinary.com/dkc8sy0wv/video/upload/v1444390196/4_aycgez.mov"
 		},
-		"text": "A caption"
+		"text": "The first dress at London Fashion Week"
 	},
 
 	{
 		"id": 2,
-		"time": "13:51",
-		"title": "Post Two",
+		"time": "13:00",
+		"title": "Smart!",
 		"media": {
-			"type": "video",
-			"url": "http://video"
+			"alt": "Some smart looking attire innit",
+			"type": "image",
+			"url": "http://res.cloudinary.com/dkc8sy0wv/image/upload/c_scale,w_416/v1444390419/2_x5fh4d.jpg"
 		},
-		"text": "A video"
+		"text": "Some smart looking attire innit"
 	}
 ]
