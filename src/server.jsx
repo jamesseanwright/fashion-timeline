@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 app.engine('handlebars', exphbs());
 app.set('views', './build');
 app.set('view engine', 'handlebars');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(`${__dirname}/public`));
 
 app.get('/', (req, res) => {
 	res.status(200).render('view', {
@@ -23,5 +23,6 @@ app.get('/', (req, res) => {
 }).listen(port);
 
 flux.actions.listen();
+iso.add(flux.store('PostStore'));
 
 console.info(`Listening on ${port}`);
