@@ -1,9 +1,17 @@
 import React from 'react';
 
 const Media = React.createClass({
-	play(evt) {
-		evt.target.play();
-		console.log('play on client');
+	componentDidMount() {
+		const { videoEl } = this.refs;
+		if (videoEl)
+			videoEl.play();
+	},
+
+	// hack to continue playback on React errors
+	componentDidUpdate() {
+		const { videoEl } = this.refs;
+		if (videoEl)
+			videoEl.play();
 	},
 
 	render() {
@@ -12,7 +20,8 @@ const Media = React.createClass({
 		if (type === 'image')
 			return <img src={url} alt={alt} />
 
-		return <video src={url} onLoadedData={this.play} loop mute />
+		// ref callback and onError - gnarly hack to play when React throws an error
+		return <video ref="videoEl" src={url} loop mute />
 	}
 });
 

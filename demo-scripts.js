@@ -17,20 +17,17 @@ postService.push(++currentIndex, {
 
 postService.push(++currentIndex, {
 	media: { 
-		alt: 'Someone walking up the catwalk...',
-		type: 'image',
+		type: 'video',
 		url: 'http://res.cloudinary.com/dkc8sy0wv/video/upload/c_scale,w_416/v1444390196/2_nxby3p.mov' 
 	}, 
 
-	text: 'Someone walking up the catwalk...',
 	time: '13:00',
 	title: 'Someone on the Catwalk'
 });
 
 postService.push(++currentIndex, {
 	media: { 
-		alt: 'A pink dress modelled by a newcomer',
-		type: 'image',
+		type: 'video',
 		url: 'http://res.cloudinary.com/dkc8sy0wv/video/upload/v1444390196/3_n2kfp8.mov' 
 	}, 
 
@@ -40,9 +37,8 @@ postService.push(++currentIndex, {
 });
 
 postService.push(++currentIndex, {
-	media: { 
-		alt: 'Another dress designed by Joe Bloggs',
-		type: 'image',
+	media: {
+		type: 'video',
 		url: 'http://res.cloudinary.com/dkc8sy0wv/video/upload/v1444389986/1_m829ml.mov' 
 	}, 
 
