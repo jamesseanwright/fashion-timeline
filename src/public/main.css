@@ -23,4 +23,10 @@
 	padding: 5px 10px;
 	box-shadow: 0 0 10px #AAA;
 	margin-bottom: 20px;
+
+	/* fade in */
+	-webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+
+    opacity: 0;
 }

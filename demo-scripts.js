@@ -20,7 +20,7 @@ postService.push(++currentIndex, {
 		type: 'video',
 		url: 'http://res.cloudinary.com/dkc8sy0wv/video/upload/c_scale,w_416/v1444390196/2_nxby3p.mov' 
 	}, 
-
+	text: 'An unknown model demonstrating stuff',
 	time: '13:00',
 	title: 'Someone on the Catwalk'
 });
