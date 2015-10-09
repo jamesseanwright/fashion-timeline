@@ -8,7 +8,11 @@ const PostStore = Fluxxor.createStore({
 	},
 
 	onPostReceived: function onPostReceived(post) {
-		this._posts.push(post);
+		if (Array.isArray(post))
+			this._posts = post;
+		else
+			this._posts.push(post);
+		
 		this.emit('change');
 	},
 

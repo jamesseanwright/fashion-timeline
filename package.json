@@ -33,8 +33,5 @@
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "simple-iso": "^0.1.1"
-  },
-  "devDependencies": {
-    "babelify": "^6.3.0"
   }
 }

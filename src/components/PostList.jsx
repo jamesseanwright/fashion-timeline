@@ -6,8 +6,6 @@ const PostList = React.createClass({
 	mixins: [StoreWatchMixin('PostStore')],
 
 	getInitialState() {
-		const { flux } = this.props;
-		flux.actions.listen();
 		return null;
 	},
 
