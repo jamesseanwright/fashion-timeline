@@ -7,7 +7,6 @@ const PostStore = Fluxxor.createStore({
 	 * constructor as normal, but Fluxxor brilliantly passes
 	 * constructor args to the intialize function, which is great! */
 	initialize: function initialize(posts) {
-		console.log('******', posts);
 		this._posts = posts && Array.isArray(posts) ? posts : [];
 		this.bindActions(constants.onPostReceived, this.onPostReceived);
 	},
