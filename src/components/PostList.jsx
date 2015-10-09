@@ -20,7 +20,7 @@ const PostList = React.createClass({
 		const children = posts.map(post => <Post key={post.id} {...post} />);
 
 		return (
-			<ul>
+			<ul className="post-list">
 				{children}
 			</ul>
 		);

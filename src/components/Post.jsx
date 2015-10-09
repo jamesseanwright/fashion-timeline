@@ -6,7 +6,7 @@ const Post = React.createClass({
 		const { title, time, text, media } = this.props;
 
 		return (
-			<li>
+			<li className="post-item">
 				<h3>{title}</h3>
 				<Media {...media} />
 				<time>{time}</time>

@@ -1,0 +1,26 @@
+* {
+	font-family: "GillSans Light", "Gill Sans MT";
+}
+
+.post-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 50px auto 0 auto;
+	width: 436px;
+}
+
+.logo, .title {
+	text-align: center;
+}
+
+.logo {
+	font-weight: lighter;
+	letter-spacing: 10px
+}
+
+.post-item {
+	background: #EFEFEF;
+	padding: 5px 10px;
+	box-shadow: 0 0 10px #AAA;
+	margin-bottom: 20px;
+}

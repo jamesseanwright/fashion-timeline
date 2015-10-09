@@ -20,8 +20,7 @@ const Media = React.createClass({
 		if (type === 'image')
 			return <img src={url} alt={alt} />
 
-		// ref callback and onError - gnarly hack to play when React throws an error
-		return <video ref="videoEl" src={url} loop mute />
+		return <video ref="videoEl" src={url} loop muted />
 	}
 });
 
